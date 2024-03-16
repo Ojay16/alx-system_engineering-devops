@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-# A expression that is simply matching School
+# An expression that simply matches School
 puts ARGV[0].scan(/School/).join
