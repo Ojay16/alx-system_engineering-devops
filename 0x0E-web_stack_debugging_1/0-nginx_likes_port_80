@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Debugging nginx port 80
+# Solution: Remove the current symbolic link at ../sites-enabled/default and replace it with a new link to ../sites-available/default.
+# Note: The option -s creates a symbolic link, and -f ensures the existing file is replaced.
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
